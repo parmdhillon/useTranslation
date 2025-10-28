@@ -52,30 +52,35 @@ useTranslation/
 ## Key Features
 
 ### 1. Type Safety
+
 - Automatic TypeScript type generation from JSON files
 - Dot-notation keys with full autocomplete
 - Compile-time error checking
 - Zero chance of typos in translation keys
 
 ### 2. Zero Dependencies
+
 - No external i18n libraries
 - Minimal bundle size (~3KB gzipped)
 - No version conflicts
 - Complete control over implementation
 
 ### 3. Static Export Support
+
 - Built specifically for Next.js static exports
 - Client-side translation loading
 - No SSR required
 - Works with any static hosting
 
 ### 4. Performance
+
 - Default language bundled (instant)
 - Other languages lazy-loaded
 - Content-based hashing for optimal caching
 - Namespace-based code splitting
 
 ### 5. Developer Experience
+
 - Simple API (useTranslation hook)
 - Automatic type updates
 - Great IDE autocomplete
@@ -97,7 +102,7 @@ import { translationManifest } from './translations/translationManifest';
   isSupportedLanguage={(lang) => ['en', 'es', 'fr'].includes(lang)}
 >
   {children}
-</TranslationProvider>
+</TranslationProvider>;
 ```
 
 ### Component Usage
@@ -128,6 +133,7 @@ npm run generate-translations
 ```
 
 **Output:**
+
 - `src/types/translations.ts` - Type definitions
 - `src/translations/defaultTranslations.ts` - Default translations
 
@@ -140,6 +146,7 @@ npm run hash-translations
 ```
 
 **Output:**
+
 - `public/locales-hashed/[lang]/[file].[hash].json` - Hashed files
 - `src/translations/translationManifest.ts` - Hash manifest
 
@@ -148,12 +155,14 @@ npm run hash-translations
 ### For Users
 
 1. **[README.md](./README.md)** - Main documentation
+
    - Quick start guide
    - API reference
    - Basic examples
    - Installation instructions
 
 2. **[docs/SETUP.md](./docs/SETUP.md)** - Complete setup guide
+
    - Step-by-step setup
    - Project structure
    - Script configuration
@@ -169,6 +178,7 @@ npm run hash-translations
 ### For Contributors
 
 1. **[CONTRIBUTING.md](./CONTRIBUTING.md)** - Contribution guidelines
+
    - Development setup
    - Code style
    - Pull request process
@@ -202,6 +212,7 @@ const {
 ```
 
 These scripts enable:
+
 - Automatic type generation
 - Default translation generation
 - Content-based hashing
@@ -281,13 +292,13 @@ import {
 
 ## Comparison
 
-| Feature | This Library | react-i18next | next-i18next |
-|---------|-------------|---------------|--------------|
-| Bundle Size | 3KB | 40KB+ | Large |
-| Dependencies | 0 | Multiple | Multiple |
-| Type Safety | Full | Partial | Limited |
-| Static Export | ✅ | ⚠️ | ❌ |
-| Setup | Simple | Medium | Complex |
+| Feature       | This Library | react-i18next | next-i18next |
+| ------------- | ------------ | ------------- | ------------ |
+| Bundle Size   | 3KB          | 40KB+         | Large        |
+| Dependencies  | 0            | Multiple      | Multiple     |
+| Type Safety   | Full         | Partial       | Limited      |
+| Static Export | ✅           | ⚠️            | ❌           |
+| Setup         | Simple       | Medium        | Complex      |
 
 ## Next Steps
 
@@ -314,8 +325,8 @@ import {
 ## Support
 
 - 📖 [Documentation](./README.md)
-- 🐛 [Issue Tracker](https://github.com/yourusername/mffl-quiz/issues)
-- 💬 [Discussions](https://github.com/yourusername/mffl-quiz/discussions)
+- 🐛 [Issue Tracker](https://github.com/parmdhillon/mffl-quiz/issues)
+- 💬 [Discussions](https://github.com/parmdhillon/mffl-quiz/discussions)
 
 ## License
 

@@ -11,11 +11,13 @@ Please be respectful and constructive in all interactions. We're here to build s
 ### Reporting Bugs
 
 Before creating a bug report:
+
 1. Check existing issues to avoid duplicates
 2. Use the latest version of the library
 3. Verify the issue is reproducible
 
 When reporting a bug, include:
+
 - Clear description of the issue
 - Steps to reproduce
 - Expected vs actual behavior
@@ -25,6 +27,7 @@ When reporting a bug, include:
 ### Suggesting Features
 
 Feature suggestions are welcome! Please:
+
 1. Check if the feature has been requested
 2. Explain the use case clearly
 3. Describe the proposed solution
@@ -33,34 +36,40 @@ Feature suggestions are welcome! Please:
 ### Pull Requests
 
 1. **Fork the repository**
+
    ```bash
-   git clone https://github.com/yourusername/mffl-quiz.git
+   git clone https://github.com/parmdhillon/mffl-quiz.git
    cd mffl-quiz/useTranslation
    ```
 
 2. **Create a branch**
+
    ```bash
    git checkout -b feature/your-feature-name
    ```
 
 3. **Make your changes**
+
    - Write clear, commented code
    - Follow existing code style
    - Add/update tests if applicable
    - Update documentation
 
 4. **Test your changes**
+
    ```bash
    npm run build
    npm test
    ```
 
 5. **Commit your changes**
+
    ```bash
    git commit -m "feat: add amazing feature"
    ```
 
    Follow [Conventional Commits](https://www.conventionalcommits.org/):
+
    - `feat:` New feature
    - `fix:` Bug fix
    - `docs:` Documentation changes
@@ -69,6 +78,7 @@ Feature suggestions are welcome! Please:
    - `chore:` Build/tooling changes
 
 6. **Push and create PR**
+
    ```bash
    git push origin feature/your-feature-name
    ```
@@ -86,7 +96,7 @@ Feature suggestions are welcome! Please:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/mffl-quiz.git
+git clone https://github.com/parmdhillon/mffl-quiz.git
 cd mffl-quiz/useTranslation
 
 # Install dependencies
@@ -142,7 +152,8 @@ useTranslation/
 - Keep comments up to date with code changes
 
 Example:
-```typescript
+
+````typescript
 /**
  * Interpolates variables in a translation string
  *
@@ -162,13 +173,14 @@ export function interpolate(
 ): string {
   // Implementation...
 }
-```
+````
 
 ## Testing
 
 Currently, the library doesn't have automated tests. If you'd like to contribute tests, that would be highly valued!
 
 Test areas that need coverage:
+
 - Hook behavior
 - Context provider
 - Type generation scripts
@@ -178,6 +190,7 @@ Test areas that need coverage:
 ## Documentation
 
 When adding features:
+
 1. Update README.md if needed
 2. Add examples to `examples/`
 3. Update API documentation in `docs/`

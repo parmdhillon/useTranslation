@@ -41,6 +41,7 @@ your-project/
 Create your translation files in `public/locales/`:
 
 **`public/locales/en/common.json`**
+
 ```json
 {
   "nav": {
@@ -56,6 +57,7 @@ Create your translation files in `public/locales/`:
 ```
 
 **`public/locales/en/dashboard.json`**
+
 ```json
 {
   "title": "Dashboard",
@@ -70,6 +72,7 @@ Create your translation files in `public/locales/`:
 ## Step 2: Create Generation Scripts
 
 **`scripts/generate-translations.js`**
+
 ```javascript
 const path = require('path');
 const {
@@ -89,6 +92,7 @@ generateDefaultTranslations(localesDir, defaultTransOutput);
 ```
 
 **`scripts/hash-translations.js`**
+
 ```javascript
 const path = require('path');
 const { hashTranslations } = require('@mffl/use-translation/scripts');
@@ -133,6 +137,7 @@ npm run update:locales
 ```
 
 This creates:
+
 - `src/types/translations.ts` - TypeScript type definitions
 - `src/translations/defaultTranslations.ts` - Default English translations
 - `src/translations/translationManifest.ts` - Hash manifest
@@ -143,6 +148,7 @@ This creates:
 Wrap your app with the `TranslationProvider`:
 
 **Next.js (`pages/_app.tsx`)**
+
 ```tsx
 import type { AppProps } from 'next/app';
 import { TranslationProvider } from '@mffl/use-translation';
@@ -171,6 +177,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 ```
 
 **React (Vite, CRA, etc.)**
+
 ```tsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -181,7 +188,9 @@ import App from './App';
 
 const SUPPORTED_LANGUAGES = ['en', 'es', 'fr'] as const;
 
-function isSupportedLanguage(lang: string): lang is typeof SUPPORTED_LANGUAGES[number] {
+function isSupportedLanguage(
+  lang: string
+): lang is (typeof SUPPORTED_LANGUAGES)[number] {
   return SUPPORTED_LANGUAGES.includes(lang as any);
 }
 
@@ -253,11 +262,7 @@ Ensure your `tsconfig.json` includes the generated types:
       "@/*": ["src/*"]
     }
   },
-  "include": [
-    "src/**/*",
-    "src/types/**/*",
-    "src/translations/**/*"
-  ]
+  "include": ["src/**/*", "src/types/**/*", "src/translations/**/*"]
 }
 ```
 
@@ -314,4 +319,4 @@ If build fails:
 
 ## Support
 
-Need help? [Open an issue](https://github.com/yourusername/mffl-quiz/issues) on GitHub.
+Need help? [Open an issue](https://github.com/parmdhillon/mffl-quiz/issues) on GitHub.

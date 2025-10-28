@@ -26,13 +26,13 @@ Update the following fields in [package.json](./package.json):
   "author": "Your Name <your.email@example.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/mffl-quiz.git",
+    "url": "https://github.com/parmdhillon/mffl-quiz.git",
     "directory": "useTranslation"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/mffl-quiz/issues"
+    "url": "https://github.com/parmdhillon/mffl-quiz/issues"
   },
-  "homepage": "https://github.com/yourusername/mffl-quiz/tree/main/useTranslation#readme"
+  "homepage": "https://github.com/parmdhillon/mffl-quiz/tree/main/useTranslation#readme"
 }
 ```
 
@@ -45,6 +45,7 @@ npm run build
 ```
 
 This creates:
+
 - `dist/index.js` - CommonJS build
 - `dist/index.esm.js` - ES Module build
 - `dist/index.d.ts` - TypeScript definitions
@@ -86,6 +87,7 @@ Note: Use `--access public` for scoped packages (@mffl/use-translation).
 ### Subsequent Publishes
 
 1. **Update version** in package.json:
+
    ```bash
    npm version patch  # 1.0.0 -> 1.0.1
    npm version minor  # 1.0.0 -> 1.1.0
@@ -93,6 +95,7 @@ Note: Use `--access public` for scoped packages (@mffl/use-translation).
    ```
 
 2. **Build**:
+
    ```bash
    npm run build
    ```
@@ -168,6 +171,7 @@ jobs:
 ### 1. Verify Package
 
 Check on npm:
+
 ```
 https://www.npmjs.com/package/@mffl/use-translation
 ```
@@ -175,6 +179,7 @@ https://www.npmjs.com/package/@mffl/use-translation
 ### 2. Test Installation
 
 Install in a fresh project:
+
 ```bash
 npm install @mffl/use-translation
 ```
@@ -194,14 +199,17 @@ Ensure all links point to the published package.
 ### Publishing Fails
 
 **Error: Package already exists**
+
 - Version is already published
 - Update version and try again
 
 **Error: You must sign in**
+
 - Run `npm login`
 - Verify credentials
 
 **Error: No access**
+
 - Check npm account has publish rights
 - For scoped packages, use `--access public`
 

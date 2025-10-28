@@ -34,10 +34,10 @@ Full TypeScript support with automatic type generation from your translation fil
 
 ```typescript
 // ✅ Autocomplete works
-t('nav.back')
+t('nav.back');
 
 // ❌ TypeScript error - key doesn't exist
-t('nav.nonexistent')
+t('nav.nonexistent');
 ```
 
 ### Namespace Support
@@ -106,11 +106,17 @@ Create a script to generate types:
 ```javascript
 // scripts/generate-translations.js
 const path = require('path');
-const { generateTranslationTypes, generateDefaultTranslations } = require('@mffl/use-translation/scripts');
+const {
+  generateTranslationTypes,
+  generateDefaultTranslations,
+} = require('@mffl/use-translation/scripts');
 
 const localesDir = path.resolve(process.cwd(), 'public/locales/en');
 const typesOutput = path.resolve(process.cwd(), 'src/types/translations.ts');
-const defaultTransOutput = path.resolve(process.cwd(), 'src/translations/defaultTranslations.ts');
+const defaultTransOutput = path.resolve(
+  process.cwd(),
+  'src/translations/defaultTranslations.ts'
+);
 
 generateTranslationTypes(localesDir, typesOutput);
 generateDefaultTranslations(localesDir, defaultTransOutput);
@@ -170,9 +176,7 @@ export default function MyComponent() {
 
   return (
     <div>
-      <button onClick={() => setLanguage('es')}>
-        Switch to Spanish
-      </button>
+      <button onClick={() => setLanguage('es')}>Switch to Spanish</button>
       <p>{t('nav.back')}</p>
       <p>{t('greeting').replace('{{name}}', 'John')}</p>
     </div>
@@ -191,9 +195,11 @@ const { t, language, setLanguage, isLoading } = useTranslation(['common']);
 ```
 
 **Parameters:**
+
 - `namespaces`: Array of namespaces to load (default: `['common']`)
 
 **Returns:**
+
 - `t(key, namespace?)`: Translation function
 - `language`: Current language code
 - `setLanguage(lang)`: Function to change language
@@ -209,7 +215,7 @@ Provider component that wraps your app.
   defaultTranslations={defaultTranslations}
   translationManifest={translationManifest}
   isSupportedLanguage={(lang) => boolean}
-  localesPath="/locales"              // optional
+  localesPath="/locales" // optional
   localesHashedPath="/locales-hashed" // optional
 >
   {children}
@@ -254,6 +260,7 @@ npm run generate-translations
 ```
 
 This creates:
+
 - `src/types/translations.ts` - Type definitions
 - `src/translations/defaultTranslations.ts` - Default translations
 
@@ -269,7 +276,10 @@ const { hashTranslations } = require('@mffl/use-translation/scripts');
 const localesDir = path.resolve(process.cwd(), 'public/locales');
 const hashedDir = path.resolve(process.cwd(), 'public/locales-hashed');
 const manifestPath = path.resolve(hashedDir, 'manifest.json');
-const tsManifestPath = path.resolve(process.cwd(), 'src/translations/translationManifest.ts');
+const tsManifestPath = path.resolve(
+  process.cwd(),
+  'src/translations/translationManifest.ts'
+);
 
 hashTranslations(localesDir, hashedDir, manifestPath, tsManifestPath);
 ```
@@ -329,9 +339,7 @@ import { useTranslation, interpolate } from '@mffl/use-translation';
 export default function Greeting({ userName }) {
   const { t } = useTranslation(['common']);
 
-  return (
-    <p>{interpolate(t('greeting'), { name: userName })}</p>
-  );
+  return <p>{interpolate(t('greeting'), { name: userName })}</p>;
 }
 ```
 
@@ -392,8 +400,8 @@ MIT © [MFFL](LICENSE)
 ## Support
 
 - 📖 [Full Documentation](./docs)
-- 🐛 [Issue Tracker](https://github.com/yourusername/mffl-quiz/issues)
-- 💬 [Discussions](https://github.com/yourusername/mffl-quiz/discussions)
+- 🐛 [Issue Tracker](https://github.com/parmdhillon/mffl-quiz/issues)
+- 💬 [Discussions](https://github.com/parmdhillon/mffl-quiz/discussions)
 
 ## Credits
 
