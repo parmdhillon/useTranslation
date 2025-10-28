@@ -1,0 +1,1 @@
+{"version":3,"file":"useTranslation.d.ts","sourceRoot":"","sources":["../../src/hooks/useTranslation.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,cAAc,EAAE,oBAAoB,EAAE,MAAM,uBAAuB,CAAC;AAE7E;;;;;;;;;;;;;;;;;;;;;;;;;;;GA2BG;AACH,eAAO,MAAM,cAAc,GAAI,CAAC,SAAS,oBAAoB,EAAE,EAC7D,aAAY,CAAqB;QAkB5B,UAAU,SAAS,CAAC,CAAC,MAAM,CAAC,cACtB,cAAc,CAAC,UAAU,CAAC,cACnB,UAAU;;;;CAW7B,CAAC"}
