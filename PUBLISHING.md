@@ -26,13 +26,13 @@ Update the following fields in [package.json](./package.json):
   "author": "Your Name <your.email@example.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/parmdhillon/mffl-quiz.git",
+    "url": "https://github.com/parmdhillon/useTranslation.git",
     "directory": "useTranslation"
   },
   "bugs": {
-    "url": "https://github.com/parmdhillon/mffl-quiz/issues"
+    "url": "https://github.com/parmdhillon/useTranslation/issues"
   },
-  "homepage": "https://github.com/parmdhillon/mffl-quiz/tree/main/useTranslation#readme"
+  "homepage": "https://github.com/parmdhillon/useTranslation/tree/main/useTranslation#readme"
 }
 ```
 

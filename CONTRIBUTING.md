@@ -38,8 +38,8 @@ Feature suggestions are welcome! Please:
 1. **Fork the repository**
 
    ```bash
-   git clone https://github.com/parmdhillon/mffl-quiz.git
-   cd mffl-quiz/useTranslation
+   git clone https://github.com/parmdhillon/useTranslation.git
+   cd useTranslation
    ```
 
 2. **Create a branch**
@@ -96,8 +96,8 @@ Feature suggestions are welcome! Please:
 
 ```bash
 # Clone the repository
-git clone https://github.com/parmdhillon/mffl-quiz.git
-cd mffl-quiz/useTranslation
+git clone https://github.com/parmdhillon/useTranslation.git
+cd useTranslation
 
 # Install dependencies
 npm install

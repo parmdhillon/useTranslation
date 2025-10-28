@@ -400,8 +400,8 @@ MIT © [MFFL](LICENSE)
 ## Support
 
 - 📖 [Full Documentation](./docs)
-- 🐛 [Issue Tracker](https://github.com/parmdhillon/mffl-quiz/issues)
-- 💬 [Discussions](https://github.com/parmdhillon/mffl-quiz/discussions)
+- 🐛 [Issue Tracker](https://github.com/parmdhillon/useTranslation/issues)
+- 💬 [Discussions](https://github.com/parmdhillon/useTranslation/discussions)
 
 ## Credits
 

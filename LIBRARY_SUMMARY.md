@@ -2,7 +2,7 @@
 
 ## Overview
 
-A fully type-safe, zero-dependency internationalization library for Next.js static exports, extracted from the mffl-quiz project.
+A fully type-safe, zero-dependency internationalization library for Next.js static exports, extracted from the useTranslation project.
 
 ## Library Structure
 
@@ -325,8 +325,8 @@ import {
 ## Support
 
 - 📖 [Documentation](./README.md)
-- 🐛 [Issue Tracker](https://github.com/parmdhillon/mffl-quiz/issues)
-- 💬 [Discussions](https://github.com/parmdhillon/mffl-quiz/discussions)
+- 🐛 [Issue Tracker](https://github.com/parmdhillon/useTranslation/issues)
+- 💬 [Discussions](https://github.com/parmdhillon/useTranslation/discussions)
 
 ## License
 
@@ -334,7 +334,7 @@ MIT License - see [LICENSE](./LICENSE) for details.
 
 ## Credits
 
-Extracted from the mffl-quiz project and packaged as a standalone library for the community.
+Extracted from the useTranslation project and packaged as a standalone library for the community.
 
 ---
 

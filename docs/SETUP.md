@@ -319,4 +319,4 @@ If build fails:
 
 ## Support
 
-Need help? [Open an issue](https://github.com/parmdhillon/mffl-quiz/issues) on GitHub.
+Need help? [Open an issue](https://github.com/parmdhillon/useTranslation/issues) on GitHub.
