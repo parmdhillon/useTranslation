@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "A fully type-safe, zero-dependency internationalization library for Next.js static exports with automatic type generation and content-based hashing",
   "main": "dist/index.js",
-  "module": "dist/index.esm.js",
+  "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/index.js",
-      "import": "./dist/index.esm.js",
+      "import": "./dist/esm/index.js",
       "types": "./dist/index.d.ts"
     },
     "./scripts": {
