@@ -1,0 +1,9 @@
+src/
+examples/
+docs/
+tsconfig.json
+.gitignore
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx

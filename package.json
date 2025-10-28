@@ -1,0 +1,65 @@
+{
+  "name": "@mffl/use-translation",
+  "version": "1.0.0",
+  "description": "A fully type-safe, zero-dependency internationalization library for Next.js static exports with automatic type generation and content-based hashing",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.esm.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./scripts": {
+      "require": "./scripts/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "scripts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc && npm run build:esm",
+    "build:esm": "tsc --module esnext --outDir dist/esm",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [
+    "i18n",
+    "internationalization",
+    "localization",
+    "nextjs",
+    "react",
+    "typescript",
+    "translation",
+    "static-export",
+    "type-safe",
+    "preact",
+    "zero-dependency"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/mffl-quiz.git",
+    "directory": "useTranslation"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/mffl-quiz/issues"
+  },
+  "homepage": "https://github.com/yourusername/mffl-quiz/tree/main/useTranslation#readme",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
